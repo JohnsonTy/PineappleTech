@@ -1,0 +1,112 @@
+/* Tyler Johnson's CIS195 CSS for Lab 9 */
+/* Obnoxious Lime Green for testing -- border: 1px solid #0f0; */
+
+body
+{
+	background-color: white;
+	color: darkblue;
+	background-image: url("pics/paw-print.gif");
+}
+
+#wrapper
+{
+	margin-left: auto;
+	margin-right: auto;
+	border: 1px solid #000;
+	background-color: gray;
+}
+
+header
+{
+	background-color: beige;
+}
+
+h1
+{
+	background-color: green;
+}
+
+#logo
+{
+	text-align: center;
+	background-image: url("pics/doglogo.png");
+	background-repeat: no-repeat;
+	line-height: 120px;
+	font-weight: bold;
+	font-size: 180%;
+}
+
+#topNav
+{
+	background-color: lightgray;
+	text-align: center;
+	padding: 20px;
+}
+
+#sideNav
+{
+	display: none;
+}
+
+main
+{
+	background-color: white;
+	padding: 10px;
+}
+
+aside
+{
+	font-family: serif, "Times New Roman", Times;
+	background-color: orange;
+	float: right;
+	width: 250px;
+	border: 2px solid darkred;
+	border-radius: 10px 40px;
+	padding: 0px 5px 0px 10px;
+	margin: 10px;
+}
+
+table, th, td 
+{
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+th, td
+{
+	padding: 5px;
+	text-align: left;
+}
+
+details
+{
+	background-color: lightblue;
+	border: 1.6px solid black;
+	margin: 15px 0px;
+	padding-left: 5px;
+}
+
+summary
+{
+	font-style: italic;
+	background-color: lightgreen;
+	font-weight: bold;
+	margin-left: -5px;
+}
+
+footer
+{
+	background-color: lightgreen;
+	font-size: 1.0rem;
+	border-top: 2px solid darkred;
+	padding: 5px;
+}
+
+address
+{
+	
+}
+
+
+
+

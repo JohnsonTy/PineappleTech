@@ -1,0 +1,172 @@
+/* Tyler Johnson's CIS195 CSS for Lab 9 */
+/* Obnoxious Lime Green for testing -- border: 1px solid #0f0; */
+
+body
+{
+	background-color: white;
+	color: darkblue;
+}
+
+#wrapper
+{
+	margin-left: auto;
+	margin-right: auto;
+	border: 1px solid #000;
+	background-color: gray;
+}
+
+header
+{
+	background-color: beige;
+}
+
+h1
+{
+	background-color: green;
+}
+
+#logo
+{
+	text-align: center;
+	background-image: url("pics/logo.png");
+	font-family: Verdana, Helvetica, Arial, sans-serif;
+	background-repeat: no-repeat;
+	line-height: 120px;
+	color: #006;
+	font-weight: bold;
+	background-color: darkred;
+	font-size: 180%;
+}
+
+#topNav
+{
+	background-color:  lightgray;
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+	text-align: center;
+	padding: .4rem;
+	color: green;
+	line-height: 1.8rem;
+}
+
+#topNav a:link
+{
+	color: lime;
+	border: 1px solid red;
+	border-radius: 5px;
+	background-color: darkblue;
+	padding: 2.5px 6.5px;
+	text-decoration: none;
+
+}
+
+#topNav a:visited
+{
+	color: darkred;
+	border: 1px solid green;
+	background-color: lightblue;
+}
+
+#topNav a:hover
+{
+	color: red;
+	border: 1px solid darkred;
+	background-color: blue;
+}
+
+#topNav a:active, #topNav a:focus
+{
+	color: rgba(102,0,102,.6);
+	border: 1px solid rgba(102,0,102,.6);
+	background-color: rgba(102,0,102,.6);
+}
+
+#sideNav
+{
+	display: none;
+}
+
+main
+{
+	background-color: lightyellow;
+	padding: 10px;
+}
+
+aside
+{
+	font-family: serif, "Times New Roman", Times;
+	background-color: orange;
+	width: 250px;
+	box-shadow: 8px 10px 3px rgba(0,100,0,.3);
+	border: 2px solid darkred;
+	border-radius: 10px 40px;
+	padding: 0px 5px 0px 10px;
+	margin: 10px;
+}
+
+table, th, td 
+{
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+th, td
+{
+	padding: 5px;
+	text-align: left;
+}
+
+th
+{
+	background-color: lightgreen;
+	text-align: center;
+}
+
+dt
+{
+	font-weight: bold;
+}
+
+fieldset
+{
+	background-color: lightblue;
+	color: black;
+	margin-top: 10px;
+}
+
+details
+{
+	background-color: lightblue;
+	border: 1.6px solid red;
+	margin: 15px 0px;
+	padding-left: 5px;
+}
+
+summary
+{
+	font-style: italic;
+	background-color: lightgreen;
+	font-weight: bold;
+	margin-left: -5px;
+}
+
+legend
+{
+	background-color: lightgreen;
+	padding: 2px;
+	border: 1px solid black;
+}
+
+footer
+{
+	background-color: lightgreen;
+	font-size: 1.0rem;
+	border-top: 2px solid darkred;
+	padding: 5px;
+}
+
+address
+{
+	
+}
+

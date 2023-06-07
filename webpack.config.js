@@ -103,6 +103,10 @@ module.exports = {
             from: path.resolve(__dirname, "src/pics"),
             to: path.resolve(__dirname, "dist/pics"),
           },
+	  {
+            from: path.resolve(__dirname, "src/css"),
+            to: path.resolve(__dirname, "dist/css"),
+          },
         ],
       }),
       new webpack.DefinePlugin({

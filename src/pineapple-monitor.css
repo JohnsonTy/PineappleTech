@@ -10,6 +10,14 @@ body
 	background-image: url("https://files.evryplace.com/static/home/trainings/img_section-vr-training.png");
 }
 
+#customcall
+{
+	background-color: #b8b800ff;
+	margin: auto;
+	padding: 1px;
+	width: 202%;
+}
+
 #wrapper
 {
 	width: 80%;
@@ -123,6 +131,42 @@ h1
 {
     text-decoration: none;
 	color: orange;
+}
+
+#utoob a:link
+{
+	color: lime;
+	border: 1px solid red;
+	font-weight: bold;
+	border-radius: 5px;
+	background-color: darkblue;
+	padding: 2.5px 6.5px;
+	text-decoration: none;
+
+}
+
+#utoob a:visited
+{
+	font-weight: bold;
+	color: darkred;
+	border: 1px solid green;
+	background-color: lightblue;
+}
+
+#utoob a:hover
+{
+	font-weight: bold;
+	color: red;
+	border: 1px solid darkred;
+	background-color: blue;
+}
+
+#utoob a:active, #utoob a:focus
+{
+	font-weight: bold;
+	color: rgba(102,0,102,.6);
+	border: 1px solid rgba(102,0,102,.6);
+	background-color: rgba(102,0,102,.6);
 }
 
 main

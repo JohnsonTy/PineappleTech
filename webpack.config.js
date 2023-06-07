@@ -1,44 +1,31 @@
-
-// BELOW IS EVENT APP CONFIG
-
 const webpack = require('webpack');
 const path = require('path');
 const htmlWebpackPlugin = require("html-webpack-plugin");
 const copyPlugin = require("copy-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
-// this loads all of the variables in the .env file
-// they're available in your code as process.env.KEY
 require('dotenv').config();
 
-/**
- * flag Used to check if the environment is production or not
-*/
 const isProduction = (process.env.NODE_ENV === 'production');
 
-/**
-* Include hash to filenames for cache busting - only at production
-*/
 const fileNamePrefix = isProduction? '[chunkhash].' : '';
 
 module.exports = {
     mode: !isProduction ? 'development': 'production',
     entry: {
-      home: './src/js/home.js',
-      about: './src/js/about.js',
-      status: './src/js/status.js',
+      example: './src/js/example.js',
     },
     output: {
       path: path.resolve(__dirname, "dist"),
       filename: fileNamePrefix + '[name].js',
-      assetModuleFilename: "assets/[name][ext]",
+      assetModuleFilename: "pics/[name][ext]",
       clean: true,
     },
     target: 'web',
     devServer: { 
       static: "./dist"
     }, 
-    /* no separate source map files in production */
+
     devtool: !isProduction ? 'source-map' : 'inline-source-map', 
     module: {
       rules: [	
@@ -53,7 +40,6 @@ module.exports = {
         }, 
         { 
           test: /\.css$/i, 
-          /* separate js code and css in production */
           use: isProduction ?
             [ MiniCssExtractPlugin.loader, 'css-loader']	:
             [ 'style-loader', 'css-loader']		
@@ -77,38 +63,52 @@ module.exports = {
     plugins: [
       new htmlWebpackPlugin({
         template: path.resolve(__dirname, "./src/index.html"),
-        chunks: ["home"],
+        chunks: ["index"],
         inject: "body",
         filename: "index.html",
       }),
       new htmlWebpackPlugin({
-        template: path.resolve(__dirname, "./src/about.html"),
-        chunks: ["about"],
+        template: path.resolve(__dirname, "./src/pc.html"),
+        chunks: ["pc"],
         inject: "body",
-        filename: "about.html",
+        filename: "pc.html",
       }),
       new htmlWebpackPlugin({
-        template: path.resolve(__dirname, "./src/status.html"),
-        chunks: ["status"],
+        template: path.resolve(__dirname, "./src/faq.html"),
+        chunks: ["faq"],
         inject: "body",
-        filename: "status.html",
+        filename: "faq.html",
+      }),
+	  new htmlWebpackPlugin({
+        template: path.resolve(__dirname, "./src/calc.html"),
+        chunks: ["calc"],
+        inject: "body",
+        filename: "calc.html",
+      }),
+      new htmlWebpackPlugin({
+        template: path.resolve(__dirname, "./src/vr.html"),
+        chunks: ["vr"],
+        inject: "body",
+        filename: "vr.html",
+      }),
+      new htmlWebpackPlugin({
+        template: path.resolve(__dirname, "./src/smart.html"),
+        chunks: ["smart"],
+        inject: "body",
+        filename: "smart.html",
       }),
       new copyPlugin({
         patterns: [
           {
-            from: path.resolve(__dirname, "src/assets/images"),
-            to: path.resolve(__dirname, "dist/assets/images"),
+            from: path.resolve(__dirname, "src/pics"),
+            to: path.resolve(__dirname, "dist/pics"),
           },
         ],
       }),
-      /* app uses global SERVER_URL rather than process.env.SERVER_URL */
       new webpack.DefinePlugin({
         NODE_ENV: JSON.stringify(process.env.NODE_ENV),
-        SERVER_URL: JSON.stringify(process.env.SERVER_URL),
-        GMAP_KEY: JSON.stringify(process.env.GMAP_KEY),
       }),
     ],
-    /* separates js (and css) that is shared between bundles - allows browser to cache */
     optimization: {
       splitChunks: {
         chunks: "all",
@@ -116,9 +116,6 @@ module.exports = {
     },
 }
 
-/**
- * Production only plugins
- */
  if(isProduction) {
   module.exports.plugins.push(
     new MiniCssExtractPlugin({
@@ -126,4 +123,3 @@ module.exports = {
     })
   );
 };
-  

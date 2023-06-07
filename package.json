@@ -1,7 +1,7 @@
 {
-  "name": "pineapple",
+  "name": "Pineapple Tech",
   "version": "1.0.0",
-  "description": "",
+  "description": "Helps Users Find PCs with API call, and Compare Other Tech options",
   "main": "index.html",
   "scripts": {
     "webpack": "webpack",

@@ -34,7 +34,6 @@
     "babel-loader": "^8.2.5",
     "bootstrap": "^5.2.1",
     "bootstrap-less": "^3.3.8",
-    "chart.js": "^3.9.1",
     "less": "^4.1.1",
     "regenerator-runtime": "^0.13.9",
     "toastr": "^2.1.4"

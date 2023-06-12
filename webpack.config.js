@@ -13,7 +13,14 @@ const fileNamePrefix = isProduction? '[chunkhash].' : '';
 module.exports = {
     mode: !isProduction ? 'development': 'production',
     entry: {
-      example: './src/js/example.js',
+	  navbar: './src/js/navbar.js',
+	  sidebar: './src/js/sidebar.js',
+	  index: './src/js/site.js',
+	  pc: './src/js/site.js',
+	  calc: './src/js/site.js',
+	  vr: './src/js/site.js',
+	  faq: './src/js/site.js',
+	  smart: './src/js/site.js',
     },
     output: {
       path: path.resolve(__dirname, "dist"),
@@ -103,7 +110,7 @@ module.exports = {
             from: path.resolve(__dirname, "src/pics"),
             to: path.resolve(__dirname, "dist/pics"),
           },
-	  {
+		  {
             from: path.resolve(__dirname, "src/css"),
             to: path.resolve(__dirname, "dist/css"),
           },

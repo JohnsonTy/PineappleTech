@@ -5,7 +5,7 @@
 	<title>Pineapple Tech - Computers</title>
 	<meta charset="UTF-8" />
 	<link href="css\styles.css" rel="stylesheet" media="only screen and (min-width: 501px)" />
-	<script src="modernizr-1.5.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body id="pc">
 <div id="wrapper">
@@ -14,151 +14,38 @@
 		<div id="logo">Pineapple Tech</div>
 	
 		<nav id="topNav">
-			<a href="index.html">Home</a>
-			<a href="pc.html">Computers</a>
-			<a href="smart.html">Phones</a>
-			<a href="vr.html">VR Headsets</a>
-			<a href="calc.html">Calculate Prices</a>
-			<a href="faq.html">FAQ</a>
+
 		</nav>
 
 	</header>
-	<nav id="sideNav">
-		<ul>
-			<li><a href="index.html">Home</a></li>
-			<li><a href="pc.html">Computers</a></li>
-			<li><a href="smart.html">Phones</a></li>
-			<li><a href="vr.html">VR Headsets</a></li>
-			<li><a href="calc.html">Calculate Prices</a></li>
-			<li><a href="faq.html">FAQ</a></li>
-		</ul>
-	</nav>
+		<nav id="sideNav">
+
+		</nav>
 	<main>
 		<article>
 			<h3>Computer Choices</h3>
 			<br>
 			<br>
 			<img src="pics/prebuiltPC.jpg" class="img-left" alt="Pre-Built" height="186"/>
-			<pre id="customcall"></pre>
-			<script>
-				function apiCustom() {
-					var data = {
-					  "page": 1,
-					  "pageCount": 16,
-					  "products": [
-						{
-						  "name": "Gaming HP RGB Desktop PC, Intel Quad I5 up to 3.6GHz, GeForce RTX 2060 6G GDDR6, 32GB DDR4, 128G SSD + 3TB, WiFi & Bluetooth, RGB Keyboard & Mouse, Win 10 Pro (Renewed)",
-						  "leftInStock": null,
-						  "image": {
-							"url": "https://m.media-amazon.com/images/I/61tiPv3AkAL._AC_UY218_.jpg",
-							"description": "Gaming HP RGB Desktop PC, Intel Quad I5 up to 3.6GHz, GeForce RTX 2060 6G GDDR6, 32GB DDR4, 128G SSD + 3TB, WiFi & Bluetoo..."
-						  },
-						  "totalReviews": 21,
-						  "rating": 4.15,
-						  "sponsored": false,
-						  "amazonChoice": false,
-						  "bestSeller": false,
-						  "amazonPrime": false,
-						  "price": {
-							"discounted": false,
-							"priceSymbol": "$",
-							"currentPrice": 439.99,
-							"priceFraction": "99",
-							"beforePrice": null
-						  },
-						  "asin": "B089QX3MFF",
-						  "url": "https://www.amazon.com/dp/B089QX3MFF",
-						  "position": 1
-						},
-						{
-						  "name": "SkyTech Archangel 3.0 Gaming Computer PC Desktop - Ryzen 5 3600 6-Core 3.6GHz, RTX 3060 12GB, 1TB SSD, 16GB DDR4 3200, RGB Fans, AC WiFi, 600W Gold PSU, Windows 11 Home 64-bit, White",
-						  "leftInStock": "Only 3 left in stock - order soon.",
-						  "image": {
-							"url": "https://m.media-amazon.com/images/I/81GZeBFAzSS._AC_UY218_.jpg",
-							"description": "SkyTech Archangel 3.0 Gaming Computer PC Desktop - Ryzen 5 3600 6-Core 3.6GHz, RTX 3060 12GB, 1TB SSD, 16GB DDR4 3200, RGB..."
-						  },
-						  "totalReviews": 449,
-						  "rating": 4.45,
-						  "sponsored": false,
-						  "amazonChoice": false,
-						  "bestSeller": false,
-						  "amazonPrime": false,
-						  "price": {
-							"discounted": false,
-							"priceSymbol": "$",
-							"currentPrice": 1099.99,
-							"priceFraction": "99",
-							"beforePrice": 1599.99
-						  },
-						  "asin": "B08XQZP4T9",
-						  "url": "https://www.amazon.com/dp/B08XQZP4T9",
-						  "position": 2
-						},
-						{
-						  "name": "HP ProDesk Desktop RGB Lights Computer Intel Core i5 4570 3.2 GHz 8GB RAM 256GB SSD Win 10 Pro WiFi, Gaming PC Keyboard, Mouse(Renewed)",
-						  "leftInStock": null,
-						  "image": {
-							"url": "https://m.media-amazon.com/images/I/515JrDlMx9L._AC_UY218_.jpg",
-							"description": "HP ProDesk Desktop RGB Lights Computer Intel Core i5 4570 3.2 GHz 8GB RAM 256GB SSD Win 10 Pro WiFi, Gaming PC Keyboard, M..."
-						  },
-						  "totalReviews": 392,
-						  "rating": 4.05,
-						  "sponsored": false,
-						  "amazonChoice": false,
-						  "bestSeller": false,
-						  "amazonPrime": false,
-						  "price": {
-							"discounted": false,
-							"priceSymbol": "$",
-							"currentPrice": 121.71,
-							"priceFraction": "71",
-							"beforePrice": null
-						  },
-						  "asin": "B09S42J71N",
-						  "url": "https://www.amazon.com/dp/B09S42J71N",
-						  "position": 3
-						},
-						{
-						  "name": "STGAubron Gaming Desktop PC Computer,Intel Core I7 3.4 GHz up to 3.9 GHz,Radeon RX 580 8G GDDR5,16G RAM,512G SSD,WiFi,Bluetooth 5.0,RGB Fanx6,RGB Keyboard&Mouse&Mouse Pad,RGB BT Sound Bar,W10H64",
-						  "leftInStock": null,
-						  "image": {
-							"url": "https://m.media-amazon.com/images/I/71m-rpjxqSL._AC_UY218_.jpg",
-							"description": "STGAubron Gaming Desktop PC Computer,Intel Core I7 3.4 GHz up to 3.9 GHz,Radeon RX 580 8G GDDR5,16G RAM,512G SSD,WiFi,Blue..."
-						  },
-						  "totalReviews": 85,
-						  "rating": 3.55,
-						  "sponsored": false,
-						  "amazonChoice": false,
-						  "bestSeller": false,
-						  "amazonPrime": false,
-						  "price": {
-							"discounted": false,
-							"priceSymbol": "$",
-							"currentPrice": 439.99,
-							"priceFraction": "99",
-							"beforePrice": 499.99
-						  },
-						  "asin": "B0BK539D4V",
-						  "url": "https://www.amazon.com/dp/B0BK539D4V",
-						  "position": 4
-						},
-					  ] }
-
-				document.getElementById("customcall").innerHTML = JSON.stringify(data, undefined, 4);
-			}
-		apiCustom()
-			</script>
-			<!--<img src="pics/customPC.jpg" class="img-right" alt="Custom" height="186"/>-->
+			<br>
+			<br>
+			<h4>Here is a list of prebuilt computers pulled from Amazon. Each with their own perks as well.</h4>
+			<br>
+			<br>
+			<br>
+			<br>
+			<p id="computers"></p>
+			<p id="product-container"></p>
 			<br>
 			<br>
 			<br>
 			<br>
 		</article>
 	</main>
-	<footer>
-	&copy; 2003-2023 Tyler's Epic Web Design, Computer Repair, and Bait Shop <a href="mailto:johnsontb@my.lanecc.edu">johnsontb@my.lanecc.edu</a>
-	<address>123 Main St, Eugene, OR 97405</address>
-	</footer>
+<footer>
+&copy; 2003-2023 Pineapple Industries <br>For any questions regarding this site: <a href="mailto:johnsontb@my.lanecc.edu">johnsontb@my.lanecc.edu</a>
+<address>123 Main St, Eugene, OR 97405</address>
+</footer>
 </div>
 </body>
 </html>

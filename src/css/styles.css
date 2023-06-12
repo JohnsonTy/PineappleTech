@@ -2,17 +2,11 @@ body
 {
 	background-color: darkblue;
 	background-size: 286px;
+	height: 100vh;
+	overflow-y: scroll;
 	color: darkblue;
 	background-repeat: repeat-y;
 	background-image: url("https://files.evryplace.com/static/home/trainings/img_section-vr-training.png");
-}
-
-#customcall
-{
-	background-color: #b8b800ff;
-	margin: auto;
-	padding: 1px;
-	width: 202%;
 }
 
 #wrapper
@@ -99,12 +93,14 @@ h1
     float: left;
     margin-top: 80px;
     border-top: 1px solid #999;
+	position: sticky;
+	top: 286px;
     border-bottom: 1px solid #999;
-    /* background-color: #0f0; */
 }
 
 #sideNav ul
 {
+	position: sticky;
     margin: 0px;
     padding: 0px;
 }
@@ -112,6 +108,7 @@ h1
 #sideNav li
 {
     list-style-type: none;
+	position: sticky;
     line-height: 1.5;
     border-top: 1px solid #999;
 	padding: 2.8px;
@@ -122,48 +119,14 @@ h1
 #sideNav li:hover
 {
     background-color: green;
+	position: sticky;
 }
 
 #sideNav a
 {
     text-decoration: none;
+	position: sticky;
 	color: orange;
-}
-
-#utoob a:link
-{
-	color: lime;
-	border: 1px solid red;
-	font-weight: bold;
-	border-radius: 5px;
-	background-color: darkblue;
-	padding: 2.5px 6.5px;
-	text-decoration: none;
-
-}
-
-#utoob a:visited
-{
-	font-weight: bold;
-	color: darkred;
-	border: 1px solid green;
-	background-color: lightblue;
-}
-
-#utoob a:hover
-{
-	font-weight: bold;
-	color: red;
-	border: 1px solid darkred;
-	background-color: blue;
-}
-
-#utoob a:active, #utoob a:focus
-{
-	font-weight: bold;
-	color: rgba(102,0,102,.6);
-	border: 1px solid rgba(102,0,102,.6);
-	background-color: rgba(102,0,102,.6);
 }
 
 main
@@ -171,6 +134,7 @@ main
 	background-color: #b8b800ff;
 	padding: 10px;
 	border-left: 1px solid black;
+	position: sticky;
 	margin-left: 110px;
 }
 
@@ -210,8 +174,6 @@ dt
 	font-weight: bold;
 }
 
-
-
 .img-left
 {
 	float: left;
@@ -244,22 +206,26 @@ fieldset
 {
 	background-color: lightblue;
 	color: black;
+	padding: 4px;
 	margin-top: 10px;
 }
 
 legend
 {
 	background-color: lightgreen;
-	padding: 2px;
+	padding: 6px;
 	border: 1px solid black;
 }
 
 footer
 {
 	background-color: yellow;
+	padding-left: 8px;
 	font-size: 1.0rem;
 	border-top: 2px solid darkred;
-	padding: 5px;
+	padding-bottom: 5px;
+	font-family: "Times New Roman";
+	padding-top: 15px;
 }
 
 #age
